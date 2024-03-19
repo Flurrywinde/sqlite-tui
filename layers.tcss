@@ -1,0 +1,52 @@
+Screen {
+    align: left top;
+    layers: baselayer inputlayer msglayer;
+}
+
+DataTable {
+	layer: baselayer;
+}
+
+Static {
+	display: block;
+	layer: msglayer;
+}
+
+TextArea .text-area--cursor {
+	background: green;
+}
+
+#updatecell {
+	display: none;
+	layer: inputlayer;
+	/* background: darkcyan; */
+	border: none;
+	width: 11;
+	height: 1;
+	offset: 0 0;
+	color: auto;
+}
+
+#searchbar {
+	layer: inputlayer;
+	display: none;
+	dock: bottom;
+	border: none;
+	height: 1;
+	width: 100%;
+    background: maroon;
+	color: white;
+	scrollbar_size_vertical: 0;
+	scrollbar_size_horizontal: 0;
+}
+
+#statusbar {
+	layer: inputlayer;
+	display: none;
+	dock: bottom;
+	height: 1;
+	width: auto;
+    background: blue;
+	scrollbar_size_vertical: 0;
+	scrollbar_size_horizontal: 0;
+}
